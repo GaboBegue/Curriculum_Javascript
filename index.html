@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Curriculum Gabriel Beguerie</title>
+	<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'></script>
+    <style>
+      #container-img1 {
+        display: inline-block;
+	    position: relative;
+	    width: 250px;
+	    height: 250px;
+	    overflow: hidden;
+	    border-radius: 50%;
+
+	  }
+
+	  #container-img1 img{
+	    width: 100%;    
+	    margin-left: 0px;
+	    margin-top: -20px;
+	    
+	  }
+
+    @media screen and (min-width: 600px) {
+      
+      .row #colFixed {
+        position: fixed;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .col {
+        width: 100%;
+      }
+
+      .row #colFixed {
+        position: static;
+      }
+    }
+
+	  .card-body {
+        
+        animation-name: cardShow;
+        animation-duration: 0.8s;
+        animation-fill-mode: both;
+
+      }
+
+
+      @keyframes cardShow {
+        from {opacity: 0;
+          transform:scaleY(0) rotateX(-60deg);
+          transform-origin: 0% 0;
+                            
+          }
+        to {opacity:1;
+          transform:scaleY(1);
+                     
+        }
+      }
+
+
+      .progress-bar-striped {
+        position: relative;
+        animation-name: progressSkills;
+        animation-duration: 2s;  
+        animation-delay: 0.3s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+      }
+
+      @keyframes progressSkills {
+         from {width: 0;}
+         to {width: $aria-valuenow;}
+      }
+
+     	 
+
+    </style>
+</head>
+<body>
+	<script type="text/javascript">
+	const perfilCV = '<p>Soy programador desde 1991 y Profesor de Música. <br> Habitualmente estoy dedicado por entero a programar en Python y desarrollo web, sobre todo Javascript (2 lenguajes que me apasionan).<br> En el último tiempo me he dedicado a programar bots financieros para Telegram para una comunidad creciente de inversores en criptomonedas.</p>';
+    const contactoCV = '<div style="float: left; margin: 5px;" class="container-fluid-sm"><span class="material-symbols-rounded" style=" margin: -2px;">home_pin</span><br><a class="text-decoration-none" href="mailto:gabriel.arturo.beguerie@gmail.com"><span class="material-symbols-rounded" style=" margin: 0px;">mail</span></a><br><span class="material-symbols-rounded" style=" margin: -2px;">date_range</span></div><div style="float: right; margin: 5px;" class="container-fluid-sm"><p style="font-weight: bold; float: right; margin-bottom: 5px;">Mar del Plata - Buenos Aires - Argentina</p><br><p style=" font-weight: bold; float: right; margin-bottom: 5px;"><a class="text-decoration-none" href="mailto:gabriel.arturo.beguerie@gmail.com">gabriel.arturo.beguerie@gmail.com</a></p><br><p style="font-weight: bold; float: right; margin-bottom: 5px;">24 de noviembre de 1973 </p><br><br><p style=" font-weight: bold; float: right; margin-bottom: 5px;"><a class="text-decoration-none" href="https://ar.linkedin.com/in/gabrielbeguerie">Perfil Linkedin</a></p></div>';
+    const skillCV = '<div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">HTML/CSS/BOOTSTRAP</div></div><div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">PYTHON</div></div><div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">JAVASCRIPT</div></div><div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">BASES DE BATOS (MySQL, FIREBASE)</div></div><div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">REACT</div></div><div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">NODE JS</div></div>'
+    const softSkillCV = '<div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">TRABAJO EN EQUIPO</div></div><div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">SOCIABILIDAD</div></div><div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">PROACTIVIDAD</div></div><div class="progress mt-3"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">CREATIVIDAD</div></div>'
+    const estudiosCursosCV ='<div class="card"><div class="card-body"><h4 class="card-title text-primary">Educación</h4><p class="card-text">Conservatorio Provincial de Música "Luis Gianneo"<br>Profesor de Música - Orientación Instrumento Piano - 2013</p></div></div><div class="card"><div class="card-body"><h4 class="card-title text-primary">Curso Python</h4><p class="card-text">Udemy<br>"Universidad Python 2021 - Pyside, Tkinter, Django y Flask" <br> Global Mentoring Ing. Ubaldo Acosta - 2021</p><a href="https://www.udemy.com/certificate/UC-1c7ad6ee-754d-4ec1-b700-1b3bc2680e55/" target="_blank" class="card-link">Certificado</a></div></div><div class="card"><div class="card-body"><h4 class="card-title text-primary">Curso Desarrollo Web</h4><p class="card-text">Udemy<br>"Universidad Desarrollo Web 2021 - FronEnd Web Developer" <br> Global Mentoring Ing. Ubaldo Acosta - 2021</p><a href="https://www.udemy.com/certificate/UC-2329526c-e669-4383-88d4-326b95d496e9/" target="_blank" class="card-link">Certificado</a></div></div><div class="card"><div class="card-body"><h4 class="card-title text-primary">Curso Javascript</h4><p class="card-text">Udemy<br>"Universidad Javascript 2021 - De Cero a Experto Javascript" <br> Global Mentoring Ing. Ubaldo Acosta - 2021</p><a href="https://www.udemy.com/certificate/UC-87a120b5-628a-4a88-b28b-f78a81e5e4ff/" target="_blank" class="card-link">Certificado</a></div></div><div class="card"><div class="card-body"><h4 class="card-title text-primary">Experto Universitario en Programación Web Full Stack</h4><p class="card-text">Universidad Tecnológica Nacional Regional Buenos Aires<br> Profesora Flavia Ursino <br> Cursando actualmente</p></div></div>'
+    const expLaboral = '<div class="card"><div class="card-body"><h4 class="card-title text-primary">Programador bots trading en Python</h4><p class="card-text">Independiente - 2018/ Presente</p><a href="https://github.com/GaboBegue/python_tradingview_light" target="_blank" class="card-link">Ultimo trabajo: Libreria de Python</a></div></div><div class="card"><div class="card-body"><h4 class="card-title text-primary">Desarrollo Web</h4><p class="card-text">Independiente - 2010/ Presente</p><a href="https://signalsfuturesbinance.blogspot.com" target="_blank" class="card-link">Ultimo trabajo en Desarrollo Web</a></div></div><div class="card"><div class="card-body"><h4 class="card-title text-primary">Profesor Instrumento</h4><p class="card-text">ESEA Nro 1 - "Polivalente de Arte" - 2014/ Presente</p></div></div>'
+
+	  function crearElemento(nombre, props, padre){
+        const element = document.createElement(nombre);
+        const propiedades = Object.entries(props);
+        propiedades.forEach(([key, value]) => { element.setAttribute(key, value);}); 
+        padre.appendChild(element);
+
+        return element;
+      }
+
+    function acord(titulos, nn, id, id2, contenido, acordeon, temaFondo, temaTexto, nombreAcordeon){      
+            
+      const card1 = crearElemento('div', {'class' : 'card border border-0' + temaTexto}, acordeon);
+      const cardHeader1 = crearElemento('h5', {'class' : 'card-header border border-0' + temaFondo, 'id': id, 'role' : 'tab'}, card1);
+      const contacto = crearElemento('a', {'class' : 'd-block text-decoration-none mt-2 mx-3' + temaFondo + temaTexto, 'data-bs-toggle' : 'collapse' , 'data-bs-parent' : '#' + nombreAcordeon, 'href': '#' + id2, 'aria-expanded' : 'true', 'aria-controls' : id2, 'id': id}, cardHeader1); 
+      contacto.innerHTML = titulos;
+      const contact = crearElemento('div', {'class' : nn, 'data-bs-parent' : '#' + nombreAcordeon, 'id' : id2, 'aria-labelledby' : id, 'role': 'tabpanel'}, card1);
+      const cardBody1 = crearElemento('div', {'class' : 'card-body text-dark border border-0 rounded-3'}, contact);
+      cardBody1.innerHTML = contenido;     
+      
+    }
+      
+
+      function crearCurriculum(){
+        document.body.style = "font-family : Verdana;"
+        const cuerpo = crearElemento('div', {'class' : 'container-fluid-sm mx-auto bg-light mt-0 h-100 '}, document.body); 
+
+        // template
+        const row1 = crearElemento('div', {'class' :'row'}, cuerpo);      
+        const col1 = crearElemento('div', {'class' :'container-fluid-sm col-sm-5 bg-primary text-white mt-0 h-100 mx-2'}, row1);
+        const col2 = crearElemento('div', {'class' :'container-fluid-sm col-sm bg-light text-white mt-0 py-2 h-100'}, row1);       
+        
+
+        //content row1
+        const row2 = crearElemento('div', {'class' :'row'}, col1); 
+        const col11 = crearElemento('div', {'class' :'container-fluid-sm col-sm-5 bg-primary text-white mt-0 py-auto h-100 mx-auto pt-3', 'id': 'colFixed'}, row2);
+        const row3 = crearElemento('div', {'class' :'row'}, col2); 
+        const col21 = crearElemento('div', {'class' :'container-fluid-sm col-sm bg-light text-white mt-0 py-2 h-100'}, row3);
+        const contImagen = crearElemento('div', {'id' : 'container-img1', 'class' : 'mx-auto d-block'}, col11);
+        const imagen = crearElemento('img', {'src' : 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKXF9LYej3EYGNUpLu7squ2OZ3PvVGp0Xv8HeWfTcvVI9WmpSx0KVqGU3oQwX1JYCB3XnQ-uabRyaPTmvD1sw14pyT-pUNVj6tclMlytn-JBvzuXduwmqLhSg1c3g-RGVNULxrBe2kukIJXIMKEidtjezfJallmyLVcl4OaOg_6LT6HKQypPfN8Mm_/s800/GABOCURRI.jpg', 'id' : 'img1'}, contImagen);         
+        const nombre = crearElemento('h1', {'class' :'text-primary my-2 mx-2 mt-5'}, col21);
+        nombre.innerHTML = "Gabriel Arturo Beguerie"       
+        const linea = crearElemento('hr', {'class' :'w-50 border border-3 mx-2 mt-5 shadow border-primary'}, col21);
+        const titulo = crearElemento('h3', {'class' :'text-primary my-2 mx-2 mt-5'}, col21);
+        titulo.innerHTML = "CURRICULUM";
+
+        
+      const acordeon = crearElemento('div', {'id' : 'acordeon', 'role' : 'tablist', 'aria-multiselectable' : 'true', 'class': 'mt-3'}, col11);
+
+      acord('CONTACTO', 'collapse', 'tit1', 'contacto', contactoCV, acordeon, ' bg-primary', ' text-light text-center', 'acordeon');
+      acord('SKILLS', 'collapse', 'tit2', 'skills', skillCV, acordeon, ' bg-primary', ' text-light text-center', 'acordeon');
+      acord('SOFT SKILLS', 'collapse', 'tit3', 'sskills', softSkillCV, acordeon, ' bg-primary', ' text-light text-center', 'acordeon');      
+              
+
+      const acordeon1 = crearElemento('div', {'id' : 'acordeon1', 'role' : 'tablist', 'aria-multiselectable' : 'true', 'class': 'mt-4'}, col21);
+
+      acord('PERFIL', 'collapse', 'tit4', 'perfil', perfilCV, acordeon1, ' bg-light', ' text-dark', 'acordeon1');
+      acord('ESTUDIOS Y CURSOS', 'collapse', 'tit5', 'estudios', estudiosCursosCV, acordeon1, ' bg-light', ' text-dark', 'acordeon1');
+      acord('EXPERIENCIA LABORAL', 'collapse', 'tit6', 'experiencia', expLaboral, acordeon1, ' bg-light', ' text-dark', 'acordeon1'); 
+
+    }
+
+    crearCurriculum(); 
+
+               
+          
+	</script>
+  
+
+</body>
+</html>
